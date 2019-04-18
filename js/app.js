@@ -3,7 +3,7 @@ $(document).ready(function(){
         $('#spinner').show();
        var job =  $('#searchJob').val();
        var location = $('#location').val();
-
+        
         $.ajax({
             type:'GET',
             url:'https://jobs.github.com/positions.json?description='+job+'&location='+location,
